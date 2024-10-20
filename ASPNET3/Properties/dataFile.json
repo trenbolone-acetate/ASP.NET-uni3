@@ -1,0 +1,17 @@
+﻿{
+  "booksTable": [
+    { "Id": 1, "Title": "Book 1" },
+    { "Id": 2, "Title": "Book 2" },
+    { "Id": 3, "Title": "Book 3" },
+    { "Id": 4, "Title": "Book 4" },
+    { "Id": 5, "Title": "Book 5" },
+    { "Id": 6, "Title": "Book 6" }
+  ],
+  "profiles": [
+    { "Id": 1, "Name": "Client 1" },
+    { "Id": 2, "Name": "Client 2" },
+    { "Id": 3, "Name": "Client 3" },
+    { "Id": 4, "Name": "Client 4" },
+    { "Id": 5, "Name": "Client 5" }
+  ]
+}
