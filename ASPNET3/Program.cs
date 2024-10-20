@@ -17,7 +17,7 @@ builder.Services.Configure<List<Book>>(
 builder.Services.Configure<List<Profile>>(
     builder.Configuration.GetSection("profiles"));
 
-builder.Services.AddTransient<Repositories>();
+builder.Services.AddTransient<Repository>();
 builder.Services.AddTransient<LibraryService>();
 
 

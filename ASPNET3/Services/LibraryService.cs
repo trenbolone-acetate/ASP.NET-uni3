@@ -2,7 +2,7 @@
 
 namespace ASPNET3.Services;
 
-public class LibraryService(Repositories repository)
+public class LibraryService(Repository repository)
 {
     public IEnumerable<Book> GetBooks()
     {

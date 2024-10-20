@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ASPNET3
 {
-    public class Repositories(IOptions<List<Book>> books, IOptions<List<Profile>> profiles)
+    public class Repository(IOptions<List<Book>> books, IOptions<List<Profile>> profiles)
     {
         private readonly List<Book> _booksTable = books.Value;
         private readonly List<Profile> _profilesTable = profiles.Value;
