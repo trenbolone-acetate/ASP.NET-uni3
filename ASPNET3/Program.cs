@@ -3,7 +3,7 @@ using ASPNET3.Models;
 using ASPNET3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers();
+builder.Services.AddControllersWithViews();
 //1
 builder.Services.AddTransient<CalcService>();
 
@@ -22,7 +22,13 @@ builder.Services.AddTransient<LibraryService>();
 
 
 var app = builder.Build();
+//LB5
+app.UseErrorLogging(); 
+app.UseExceptionHandler("/Home/Error");
+
+app.UseRouting();
 
 app.MapControllers();
+
 
 app.Run();

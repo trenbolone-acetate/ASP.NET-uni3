@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CheckCookies</title>
+</head>
+<body>
+<div>
+    <h2>List of Cookies Set</h2>
+    <ul>
+        @foreach (var cookie in ViewBag.Cookies)
+        {
+            <li>@cookie.Key : @cookie.Value</li>
+        }
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+<form action="/Form/SubmitForm" method="post">
+    @Html.AntiForgeryToken()
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    
+    <label for="value">Value:</label><br>
+    <input type="text" id="value" name="value"><br>
+
+    <label for="datetime">Date and Time:</label><br>
+    <input type="datetime-local" id="datetime" name="datetime"><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
